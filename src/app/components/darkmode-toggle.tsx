@@ -14,7 +14,7 @@ const ThemeToggle = () => {
       className="theme-toggle"
       aria-label="Toggle theme"
     >
-      {theme === 'dark' ? '☀️' : '🌙'}
+      {theme === 'dark' ? '🌙' : '☀️'}
     </button>
   );
 };

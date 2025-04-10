@@ -13,7 +13,7 @@ export default function Home() {
         <p>Software Developer</p>
 
         <div className="profile-picture">
-          <Image src="/me.png" alt="Andreas Wenzelhuemer" className="profile-img" width={150} height={150} />
+          <Image src="https://awenzelhuemer.github.io/me.png" alt="Andreas Wenzelhuemer" className="profile-img" width={150} height={150} />
         </div>
 
         <div className="icons">
