@@ -1,0 +1,183 @@
+/* Define CSS Variables */
+:root {
+  --main-text-color: #93d42b;
+  /* Main text color */
+  --background-dark: #0d1117;
+  --background-light: #ffffff;
+  --text-dark: #c9d1d9;
+  --text-light: #333333;
+  --tech-dark-bg: #21262d;
+  --tech-light-bg: #f0f0f0;
+  --tech-dark-text: #c9d1d9;
+  --tech-light-text: #333333;
+  --hover-dark: #30363d;
+  --hover-light: #e0e0e0;
+}
+
+/* Default to Dark Mode */
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: 'Roboto Mono', monospace;
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+/* Light/Dark Mode Button */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--main-text-color);
+}
+
+/* Rest of the styling (unchanged) */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: var(--main-text-color);
+}
+
+.icons {
+  margin-top: 1rem;
+}
+
+.icons a {
+  font-size: 1.6rem;
+  margin-right: 1rem;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: var(--main-text-color);
+  transform: scale(1.2);
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tech {
+  background-color: var(--tech-dark-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dark-mode .tech-stack .tech {
+  background-color: var(--tech-dark-bg);
+  color: var(--tech-dark-text);
+}
+
+.light-mode .tech-stack .tech {
+  background-color: var(--tech-light-bg);
+  color: var(--tech-light-text);
+}
+
+.tech:hover {
+  background-color: var(--hover-dark);
+}
+
+.light-mode .tech:hover {
+  background-color: var(--hover-light);
+}
+
+.timeline {
+  position: relative;
+  margin-left: 1rem;
+  padding-left: 2rem;
+  border-left: 2px solid var(--main-text-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-text-color);
+  border-radius: 50%;
+  border: 2px solid var(--main-text-color);
+  transform: translateY(-50%);
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #8b949e;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.timeline-content p {
+  margin: 0.3rem 0 0;
+  color: #8b949e;
+}
+
+.timelines-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+  .timeline-container {
+    width: 50%;
+  }
+
+@media (max-width: 600px) {
+  .timeline-container {
+    width: 100%;
+  }
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.general-container {
+  text-align: center;
+}
