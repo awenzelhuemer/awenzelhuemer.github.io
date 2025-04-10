@@ -1,9 +1,12 @@
 'use client'
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Tech from "./components/tech";
 import Timeline from "./components/timeline";
 import './page.css'
 import Image from 'next/image'
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 export default function Home() {
   return (
@@ -18,13 +21,13 @@ export default function Home() {
 
         <div className="icons">
           <a href="https://github.com/awenzelhuemer" target="_blank" title="GitHub">
-            <i className="fab fa-github"></i>
+            <FontAwesomeIcon icon={faGithub} />
           </a>
           <a href="https://www.linkedin.com/in/awenzelhuemer" target="_blank" title="LinkedIn">
-            <i className="fab fa-linkedin"></i>
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a href="mailto:andreas.wenzelhuemer@gmail.com" target="_blank" title="Email">
-            <i className="fa-solid fa-envelope"></i>
+            <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
       </div>

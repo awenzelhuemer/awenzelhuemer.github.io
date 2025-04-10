@@ -9,3 +9,14 @@
   .general-container {
     text-align: center;
   }
+
+  .icons {
+    margin-top: 1rem;
+  }
+  
+  .icons a {
+    font-size: 1.6rem;
+    margin-right: 1rem;
+    color: var(--text-dark);
+    text-decoration: none;
+  }
