@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   assetPrefix: isGithubPages ? '/' : '',
   basePath: isGithubPages ? '/' : '',
   trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
