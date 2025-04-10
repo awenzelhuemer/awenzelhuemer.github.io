@@ -1,6 +1,6 @@
 /* Define CSS Variables */
 :root {
-  --main-text-color: #93d42b;
+  --main-text-color: #18d007;
   /* Main text color */
   --background-dark: #0d1117;
   --background-light: #ffffff;
@@ -105,7 +105,7 @@ h2 {
   color: var(--tech-light-text);
 }
 
-.tech:hover {
+.dark-mode .tech:hover {
   background-color: var(--hover-dark);
 }
 
@@ -139,14 +139,14 @@ h2 {
 }
 
 .timeline-date {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #8b949e;
   margin-bottom: 0.3rem;
 }
 
 .timeline-content h3 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: var(--text-dark);
 }
 
@@ -172,6 +172,7 @@ h2 {
 }
 
 .profile-img {
+  box-shadow: 0 0 10px var(--main-text-color);
   width: 150px;
   height: 150px;
   border-radius: 50%;
