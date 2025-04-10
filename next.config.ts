@@ -4,8 +4,8 @@ const isGithubPages = process.env.DEPLOY_TARGET === 'GH_PAGES';
 
 const nextConfig: NextConfig = {
   output: 'export', // static export
-  assetPrefix: isGithubPages ? '/awenzelhuemer.github.io/' : '',
-  basePath: isGithubPages ? '/awenzelhuemer.github.io' : '',
+  assetPrefix: isGithubPages ? '/' : '',
+  basePath: isGithubPages ? '/' : '',
   trailingSlash: true,
 };
 
