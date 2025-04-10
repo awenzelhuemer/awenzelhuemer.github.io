@@ -15,29 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-
-      {/* <style>
-        {
-
-          
-          `
-            --background-dark: #0d1117;
-  --background-light: #ffffff;
-          
-          .dark body {
-  background-color: var(--background-dark);
-  color: var(--text-dark);
-}
-
-.light body {
-  background-color: var(--background-light);
-  color: var(--text-light);
-}`
-        }
-      </style> */}
-      </head>
+    <html lang="en" className="dark">
       <body>
         <ThemeProvider>
           <DarkmodeToogle />
