@@ -1,0 +1,42 @@
+:root {
+  --main-text-color: #18d007;
+  /* Main text color */
+  --background-dark: #0d1117;
+  --background-light: #ffffff;
+  --text-dark: #c9d1d9;
+  --text-light: #333333;
+  --tech-dark-bg: #21262d;
+  --tech-light-bg: #f0f0f0;
+  --tech-dark-text: #c9d1d9;
+  --tech-light-text: #333333;
+  --hover-dark: #30363d;
+  --hover-light: #e0e0e0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: var(--main-text-color);
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.6;
+}
+
+.dark body {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.light body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}

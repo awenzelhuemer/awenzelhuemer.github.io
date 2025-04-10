@@ -1,0 +1,16 @@
+
+  /* Light/Dark Mode Button */
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    cursor: pointer;
+  }
+
+  .theme-toggle:hover {
+    color: var(--main-text-color);
+  }
